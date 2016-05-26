@@ -1,0 +1,15 @@
+doctype html
+html(lang="es")
+    head
+        title=titulo
+        link(href="/css/estilos.css", rel="stylesheet", type="text/css")
+    body
+        h1
+            a(href="/")=titulo
+        div.contenedor
+          -for (var i = 0; i < camisetas.length; i++) {
+          div.item
+            h2="Camiseta "+ camisetas[i].titulo
+            img(src=camisetas[i].imagen, width="250")
+            a(href="/tienda/comprar/" + camisetas[i].titulo).comprar Comprar
+          -}
