@@ -8,7 +8,9 @@ module.exports = function(app) {
 };
 
 router.get('/agregar', function(req, res) {
-    res.render('agregar');
+    res.render('agregar', {
+      title: 'Agregar',
+    });
 });
 
 router.post('/agregar', function(req, res) {
