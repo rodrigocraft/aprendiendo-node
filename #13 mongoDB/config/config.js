@@ -9,7 +9,7 @@ var config = {
       name: '13-mongodb'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/local'
+    db: 'mongodb://localhost/miBaseDB'
   },
 
   test: {
