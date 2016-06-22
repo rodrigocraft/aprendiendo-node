@@ -1,0 +1,9 @@
+{
+  "name": "15-socketio",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}

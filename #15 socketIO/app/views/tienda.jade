@@ -1,0 +1,31 @@
+extends layout
+block content
+  h1
+    a(href='/')=titulo
+  div.agregar
+    a(href='agregar').agg Agregar Nuevo
+  div.contenedor
+  - for (var i = 0; i < camisetas.length; i++) {
+    div.item
+      h2 Camiseta #{camisetas[i].color}
+      img(src="img/"+camisetas[i].imagen, width="200")
+      small Descripción: #{camisetas[i].descripcion + "."}
+  - }
+  include chat.jade
+
+  script(type="text/javascript", src="https://cdn.socket.io/socket.io-1.4.5.js")
+  script(type="text/javascript", src="https://code.jquery.com/jquery-3.0.0.min.js"
+			  integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
+			  crossorigin="anonymous")
+
+  script.
+    var socket = io();
+    $('form').submit(function () {
+      socket.emit('chat message', $('#m').val());
+      $('#m').val('');
+      return false;
+    });
+
+    socket.on ('chat message', function (msg) {
+      $('#messages').prepend($('<li>').text(msg));
+    });

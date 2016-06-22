@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+h1 {
+  background: #303030;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+p {
+  background: silver;
+  width: 40%;
+  margin: 50px auto;
+  padding: 10px;
+}
+img {
+  display: block;
+  margin: auto;
+}
+.comprar {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background: red;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.comprar:hover {
+  background: green;
+  color: #000;
+}
+.contenedor {
+  max-width: 700px;
+  margin: auto;
+  padding: 0;
+}
+.item {
+  margin: 30px 0;
+  width: 50%;
+  float: left;
+}
+small {
+  display: block;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+.agg {
+  background: red;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  left: 1280px;
+  text-align: center;
+  text-decoration: none;
+  width: 148px;
+}
+.agg:hover {
+  background: green;
+  color: #000;
+}
+label {
+  display: block;
+  font-weight: bolder;
+  padding: 5px;
+  margin: auto;
+}
+input {
+  display: inline;
+  margin: auto;
+}
+.guardar {
+  background: red;
+  border-radius: 5px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin: 12px 0;
+}
+.guardar:hover {
+  background: green;
+  color: #000;
+}
+
+/*chat css*/
+#tituloChat {
+  bottom: 0;
+  color: #0aaf4c;
+  font-weight: bolder;
+  position: fixed;
+  width: 100%;
+}
+form {
+  background: #000;
+  bottom: 0;
+
+  padding: 3px;
+  position: fixed;
+  width: 100%;
+}
+form input {
+  border: 0;
+  margin-right: .5%;
+  padding: 10px;
+  width: 88%;
+}
+form button {
+  background: rgb(130, 224, 255);
+  border: none;
+  padding: 10px;
+  width: 9%;
+}
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#messages li {
+  padding: 5px 10px;
+}
+#messages li:nth-child(odd) {
+  background: #eee;
+}
